@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "daftos"
   gem.homepage = "http://github.com/hypertornado/daftos"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "OS in your browser"
+  gem.description = "OS in your browser"
   gem.email = "hypertornado@gmail.com"
   gem.authors = ["Ondrej Odchazel"]
   # dependencies defined in Gemfile
