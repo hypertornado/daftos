@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'daftos'
+
+case ARGV.first
+when "start"
+  puts "Starting daftos server."
+  Daftos.start
+when "stop"
+  puts "Stopping daftos server."
+  Daftos.stop
+  puts "Server stopped."
+else
+  puts "Unknown command."
+end

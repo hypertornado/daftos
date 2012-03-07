@@ -21,6 +21,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = "OS in your browser"
   gem.email = "hypertornado@gmail.com"
   gem.authors = ["Ondrej Odchazel"]
+  gem.executables = ['daftos']
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
