@@ -2,11 +2,12 @@ require 'sinatra/base'
 
 
 class Server < Sinatra::Base
-	get '/' do
-		"hi"
-	end
+  get '/' do
+    settings.root
+  end
 
-	get '/quit' do
-		quit(0)
-	end
+  get '/:app_name' do
+    params[:app_name]
+    erb :app_template
+  end
 end
