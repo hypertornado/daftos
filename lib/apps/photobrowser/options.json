@@ -1,0 +1,16 @@
+{
+	"name": "PhotoBrowser",
+	"description": "Daft photo browser.",
+	"version": "0.1",
+	"libs": ["bootstrap.css","jquery.js", "daftos.coffee", "bootstrap.js", "photobrowser.coffee"],
+	"menu": [
+		{
+			"name": "Effects",
+			"id":"iiii",
+			"submenu": [
+				{"name":"blur","id":"blur"}
+			]
+		}
+	]
+}
+

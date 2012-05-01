@@ -1,0 +1,7 @@
+{
+	"name": "Daftos Apps",
+	"description": "Daft apps.",
+	"version": "0.1",
+	"libs": ["bootstrap.css","jquery.js", "daftos.coffee", "bootstrap.js"]
+}
+

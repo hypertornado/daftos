@@ -1,10 +1,9 @@
-#!/usr/bin/env ruby
 
-require 'daftos'
+require_relative('../lib/daftos.rb')
 
 case ARGV.first
 when "start"
-  puts "Starting daftos server."
+  puts "Starting daftos server..."
   Daftos.start
 when "stop"
   puts "Stopping daftos server."

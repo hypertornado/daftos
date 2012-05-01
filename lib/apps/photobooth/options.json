@@ -1,0 +1,26 @@
+{
+	"name": "PhotoBooth",
+	"description": "Daft file browser.",
+	"version": "0.1",
+	"libs": ["bootstrap.css","jquery.js", "style.css", "daftos.coffee", "bootstrap.js", "photobooth.coffee"],
+	"menu": [
+		{
+			"name": "Effects",
+			"id":"iiii",
+			"submenu": [
+				{"name":"blur","id":"blur"},
+				{"name":"brightness","id":"brightness"},
+				{"name":"contrast","id":"contrast"},
+				{"name":"hue-rotate","id":"hue-rotate"},
+				{"name":"hue-rotate2","id":"hue-rotate2"},
+				{"name":"hue-rotate3","id":"hue-rotate3"},
+				{"name":"saturate","id":"saturate"},
+				{"name":"grayscale","id":"grayscale"},
+				{"name":"sepia","id":"sepia"},
+				{"name":"invert","id":"invert"}
+
+			]
+		}
+	]
+}
+

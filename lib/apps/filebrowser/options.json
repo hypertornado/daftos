@@ -1,0 +1,7 @@
+{
+	"name": "File browser",
+	"description": "Daft file browser.",
+	"version": "0.1",
+	"libs": ["bootstrap.css","jquery.js", "daftos.coffee", "bootstrap.js", "filebrowser.coffee"]
+}
+

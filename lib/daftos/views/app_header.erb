@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title><%= @options['name'] %> - DaftOS</title>
+	<% @options['libs'].each do |lib| %>
+    <% if lib =~ /.*(\.js|\.coffee)/ %>
+		  <script src="/<%= @app_id %>/<%= lib %>"></script>
+    <% else %>
+      <link rel="stylesheet" href="/<%= @app_id %>/<%= lib %>">
+    <% end %>
+	<% end %>
+</head>
+<body data-app-name="<%= @app_id %>">
+
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+	<div class="container" style="width: auto; margin-left: 30px;">
+		<ul class="nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle brand" style="color: white;"
+				 data-toggle="dropdown">
+				<%= @options['name'] %>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="/">Apps</a></li>
+				</ul></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="top-free-space" style="height: 40px;"></div>
