@@ -18,7 +18,7 @@ class Daftos
         map('/api/apps'){ run AppsAPI }
         map('/'){ run Server }
       end
-      Rack::Handler::Thin.run builder, :Port => 9999
+      Rack::Handler::Thin.run builder, :Port => 9999, :Host => "0.0.0.0"
 
     end
   end
@@ -29,7 +29,5 @@ class Daftos
   end
 
 end
-
-Daftos.start()
 
 

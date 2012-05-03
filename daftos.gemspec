@@ -26,7 +26,6 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "bin/daftos",
     "daftos.gemspec",
     "lib/.DS_Store",
     "lib/apis/.DS_Store",

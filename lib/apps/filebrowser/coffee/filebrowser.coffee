@@ -13,7 +13,10 @@ class FileBrowser
   hashchange: =>
     location = window.location.hash
     location = location.slice(1,location.length)
-    @load_dir(location)
+    if location.length > 0
+      @load_dir(location)
+    else
+      @load_dir('/')
 
   load_dir: (path) =>
     $('#file-list').html("")

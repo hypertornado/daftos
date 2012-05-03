@@ -18,10 +18,10 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/hypertornado/daftos"
   gem.license = "MIT"
   gem.summary = "OS in your browser"
-  gem.description = "OS in your browser"
+  gem.description = "Daftos is a server running HTML5 application, providing them your local filesystem via API."
   gem.email = "hypertornado@gmail.com"
   gem.authors = ["Ondrej Odchazel"]
-  gem.executables = ['daftos']
+  gem.executables = ['daft']
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
