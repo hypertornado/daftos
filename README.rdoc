@@ -1,12 +1,14 @@
 = daftos
 
-Daftos is a server running HTML5 application, providing them your local filesystem via API.
+DaftOS is a server running HTML5 application, providing them your local filesystem via API.
+
+DaftOS currently support only UNIX like systems.
 
 ==Installation
 
 * Download ruby version >= 1.9.0
-* gem install daftos
-* daft start
+* run <code>gem install daftos</code> in your terminal
+* run <code>daft start</code> in your terminal
 * point your browser at http://localhost:9999
 
 == Contributing to daftos
