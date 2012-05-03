@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "daftos"
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ondrej Odchazel"]
-  s.date = "2012-05-01"
+  s.date = "2012-05-03"
   s.description = "OS in your browser"
   s.email = "hypertornado@gmail.com"
   s.executables = ["daftos"]
@@ -30,16 +30,24 @@ Gem::Specification.new do |s|
     "daftos.gemspec",
     "lib/.DS_Store",
     "lib/apis/.DS_Store",
+    "lib/apis/apps_api.rb",
     "lib/apis/filesystem_api.rb",
     "lib/apps/.DS_Store",
+    "lib/apps/apps/.DS_Store",
     "lib/apps/apps/body.html",
+    "lib/apps/apps/coffee/apps.coffee",
+    "lib/apps/apps/css/style.css",
     "lib/apps/apps/options.json",
+    "lib/apps/apps/png/.DS_Store",
+    "lib/apps/apps/png/icon.png",
     "lib/apps/filebrowser/.DS_Store",
     "lib/apps/filebrowser/body.html",
     "lib/apps/filebrowser/coffee/filebrowser.coffee",
     "lib/apps/filebrowser/js/.DS_Store",
     "lib/apps/filebrowser/js/daftos.js",
     "lib/apps/filebrowser/options.json",
+    "lib/apps/filebrowser/png/.DS_Store",
+    "lib/apps/filebrowser/png/icon.png",
     "lib/apps/photobooth/.DS_Store",
     "lib/apps/photobooth/body.html",
     "lib/apps/photobooth/coffee/photobooth.coffee",
@@ -48,10 +56,16 @@ Gem::Specification.new do |s|
     "lib/apps/photobooth/js/.DS_Store",
     "lib/apps/photobooth/js/daftos.js",
     "lib/apps/photobooth/options.json",
+    "lib/apps/photobooth/png/.DS_Store",
+    "lib/apps/photobooth/png/icon.png",
+    "lib/apps/photobrowser/.DS_Store",
     "lib/apps/photobrowser/body.html",
     "lib/apps/photobrowser/coffee/photobrowser.coffee",
     "lib/apps/photobrowser/js/.DS_Store",
     "lib/apps/photobrowser/options.json",
+    "lib/apps/photobrowser/png/.DS_Store",
+    "lib/apps/photobrowser/png/icon.png",
+    "lib/apps/texteditor/.DS_Store",
     "lib/apps/texteditor/body.html",
     "lib/apps/texteditor/coffee/texteditor.coffee",
     "lib/apps/texteditor/js/.DS_Store",
@@ -316,6 +330,7 @@ Gem::Specification.new do |s|
     "lib/apps/texteditor/js/worker-javascript.js",
     "lib/apps/texteditor/js/worker-json.js",
     "lib/apps/texteditor/options.json",
+    "lib/apps/texteditor/png/icon.png",
     "lib/daftos.rb",
     "lib/daftos/.DS_Store",
     "lib/daftos/server.rb",
@@ -324,8 +339,10 @@ Gem::Specification.new do |s|
     "lib/libs/.DS_Store",
     "lib/libs/coffee/daftos.coffee",
     "lib/libs/css/bootstrap.css",
+    "lib/libs/img/.DS_Store",
     "lib/libs/js/bootstrap.js",
     "lib/libs/js/jquery.js",
+    "lib/libs/png/icon.png",
     "myapp.pid",
     "test/helper.rb",
     "test/test_daftos.rb"
