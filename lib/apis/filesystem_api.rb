@@ -41,6 +41,8 @@ class FileSystem
           f = File.new("#{dir.path}/#{name}")
           files << file_info(f)
         rescue
+          #puts "error"
+          #puts e
         end
       end
       ret[:contents] = files
@@ -62,6 +64,7 @@ class FileSystem
     ret[:client_mtime] = file.mtime
     ret[:modified] = file.ctime
     ret[:mime_type] = Rack::Mime.mime_type("." + file.path.split('.').last)
+    ret[:binary] = File.binary?(ret[:absolute_path])
     ret
   end
 

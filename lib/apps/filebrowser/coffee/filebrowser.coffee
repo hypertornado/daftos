@@ -23,6 +23,7 @@ class FileBrowser
         path: path
       dataType: 'json'
       success: (data) =>
+        console.log data
         for file in data.contents
           $('#dir-path').html(@path_element(path))
           $('#file-list').append(@create_element(file))
@@ -36,6 +37,8 @@ class FileBrowser
       app = ""
       app = "texteditor" if file.mime_type.match("text/")
       app = "photobrowser" if file.mime_type.match("image/")
+      if (app == "" and not file.binary)
+        app = "texteditor"
       if app.length > 0
         el = $("<tr><td><a href='/#{app}##{file.absolute_path}' target='_blank'>#{file.name}</a></td><td>#{file.mime_type}</td></tr>")
       else

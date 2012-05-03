@@ -1,6 +1,8 @@
 
+require 'ptools'
 require_relative 'daftos/server.rb'
 require_relative 'apis/filesystem_api.rb'
+require_relative 'apis/apps_api.rb'
 
 
 class Daftos
@@ -13,6 +15,7 @@ class Daftos
       
       builder = Rack::Builder.new do
         map('/api/file_system'){ run FileSystemAPI }
+        map('/api/apps'){ run AppsAPI }
         map('/'){ run Server }
       end
       Rack::Handler::Thin.run builder, :Port => 9999
