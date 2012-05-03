@@ -64,7 +64,7 @@ class FileSystem
     ret[:client_mtime] = file.mtime
     ret[:modified] = file.ctime
     ret[:mime_type] = Rack::Mime.mime_type("." + file.path.split('.').last)
-    ret[:binary] = File.binary?(ret[:absolute_path])
+    #ret[:binary] = File.binary?(ret[:absolute_path])
     ret
   end
 
