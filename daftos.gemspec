@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "daftos"
-  s.version = "0.4.0"
+  s.version = "0.4.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ondrej Odchazel"]
@@ -61,6 +61,7 @@ Gem::Specification.new do |s|
     "lib/apps/photobrowser/.DS_Store",
     "lib/apps/photobrowser/body.html",
     "lib/apps/photobrowser/coffee/photobrowser.coffee",
+    "lib/apps/photobrowser/css/style.css",
     "lib/apps/photobrowser/js/.DS_Store",
     "lib/apps/photobrowser/options.json",
     "lib/apps/photobrowser/png/.DS_Store",
@@ -330,6 +331,7 @@ Gem::Specification.new do |s|
     "lib/apps/texteditor/js/worker-javascript.js",
     "lib/apps/texteditor/js/worker-json.js",
     "lib/apps/texteditor/options.json",
+    "lib/apps/texteditor/png/.DS_Store",
     "lib/apps/texteditor/png/icon.png",
     "lib/daftos.rb",
     "lib/daftos/.DS_Store",
