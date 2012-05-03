@@ -5,14 +5,14 @@
 
 Gem::Specification.new do |s|
   s.name = "daftos"
-  s.version = "0.3.0"
+  s.version = "0.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ondrej Odchazel"]
   s.date = "2012-05-03"
-  s.description = "OS in your browser"
+  s.description = "Daftos is a server running HTML5 application, providing them your local filesystem via API."
   s.email = "hypertornado@gmail.com"
-  s.executables = ["daftos"]
+  s.executables = ["daft"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "bin/daft",
     "daftos.gemspec",
     "lib/.DS_Store",
     "lib/apis/.DS_Store",
